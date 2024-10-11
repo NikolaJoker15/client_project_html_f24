@@ -2,7 +2,7 @@ body {
   font-family: 'Roboto', Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f9;
+  background-color: #f7d7f2;
   color: #333;
 }
 
@@ -66,7 +66,7 @@ nav ul li.active a {
 main {
   margin-top: 20px;
   padding: 10px;
-  background-color: #ffffff;
+  background-color: #bbecbe;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
