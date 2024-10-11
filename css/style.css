@@ -37,6 +37,7 @@ nav ul {
   list-style: none;
   padding: 0;
   text-align: center;
+  background-color: #00274c;
 }
 
 nav ul li {
@@ -117,6 +118,17 @@ footer p {
 
 footer a {
   color: #ffca00;
+}
+
+/* List styles for highlighted items */
+ul.highlight li {
+  font-weight: bold;
+  color: #007bc1;
+}
+
+ol.highlight li {
+  font-weight: bold;
+  color: #007bc1;
 }
 
 ul {
