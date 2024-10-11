@@ -1,0 +1,174 @@
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+img, figure {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #007bc1;
+}
+
+a:focus {
+  outline: 2px dashed #ffca00;
+}
+
+header, nav, main, footer {
+  padding: 1em;
+}
+
+header img {
+  display: block;
+  margin: 0 auto;
+  width: 180px; /* Consider a fluid unit if necessary */
+}
+
+/* Navigation styles */
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  padding: 10px 20px;
+  display: inline-block;
+  background-color: #007bc1;
+  color: white;
+  border-radius: 5px;
+}
+
+nav ul li a:focus, nav ul li a:hover {
+  background-color: #005a88;
+}
+
+nav ul li.active a {
+  background-color: #ffca00;
+  color: #00274c;
+}
+
+/* Main content styles */
+main {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+main h1, main h2, main h3 {
+  color: #00274c;
+  text-align: center;
+}
+
+main p, main li {
+  line-height: 1.6;
+}
+
+/* Accessibility and skip link */
+.skip a {
+  position: absolute;
+  top: -40px; 
+  left: -40px;
+  background: #007bc1;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+}
+
+.skip a:focus {
+  top: 10px;
+  left: 10px;
+}
+
+/* Article and section styling */
+section {
+  margin-bottom: 20px;
+}
+
+article {
+  margin-bottom: 20px;
+}
+
+footer {
+  text-align: center;
+  background-color: #00274c;
+  color: white;
+  padding: 10px 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: #ffca00;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Grid layout for aligned sections */
+section.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 600px) {
+  section.grid {
+      grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 768px) {
+  header img {
+      width: 260px; 
+  }
+
+  nav ul li {
+      margin: 0 20px;
+  }
+
+  main {
+      padding: 20px;
+  }
+
+  footer {
+      padding: 20px 0;
+  }
+}
+
+/* Flexbox Utility classes - Utilize where necessary */
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .flex {
+      flex-direction: row;
+  }
+}
