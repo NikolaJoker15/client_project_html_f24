@@ -121,14 +121,10 @@ footer a {
 }
 
 /* List styles for highlighted items */
-ul.highlight li {
-  font-weight: bold;
-  color: #007bc1;
-}
-
+ul.highlight li,
 ol.highlight li {
   font-weight: bold;
-  color: #007bc1;
+  color: #007bc1 !important;
 }
 
 ul {
