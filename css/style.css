@@ -2,7 +2,7 @@ body {
   font-family: 'Roboto', Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f7d7f2;
+  background-color: #f7d7f2; 
   color: #333;
 }
 
@@ -18,8 +18,9 @@ a {
   color: #007bc1;
 }
 
-a:focus {
+a:focus, a:hover {
   outline: 2px dashed #ffca00;
+  color: #005a88; /* Darker color on hover for better visibility */
 }
 
 header, nav, main, footer {
@@ -29,7 +30,7 @@ header, nav, main, footer {
 header img {
   display: block;
   margin: 0 auto;
-  width: 180px; /* Consider a fluid unit if necessary */
+  width: 50%; /* Adjust width for mobile view */
 }
 
 /* Navigation styles */
@@ -42,7 +43,7 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 5%;
 }
 
 nav ul li a {
@@ -83,7 +84,7 @@ main p, main li {
 /* Accessibility and skip link */
 .skip a {
   position: absolute;
-  top: -40px; 
+  top: -40px;
   left: -40px;
   background: #007bc1;
   color: white;
@@ -119,13 +120,14 @@ footer p {
 footer a {
   color: #ffca00;
   text-decoration: underline;
+  font-size: 1.1em; /* Slightly larger font for better readability */
 }
 
 /* List styles for highlighted items */
 ul.highlight li,
 ol.highlight li {
   font-weight: bold;
-  color: #007bc1 !important;
+  color: #007bc1;
 }
 
 ul {
@@ -144,45 +146,10 @@ section.grid {
   gap: 20px;
 }
 
-a:focus, a:hover {
-  outline: 2px dashed #ffca00; /* Add focus outline */
-  color: #005a88; /* Darker color on hover for better visibility */
-}
-
-@media (min-width: 600px) {
-  section.grid {
-      grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (min-width: 768px) {
-  header img {
-      width: 260px; 
-  }
-
-  nav ul li {
-      margin: 0 20px;
-  }
-
-  main {
-      padding: 20px;
-  }
-
-  footer {
-      padding: 20px 0;
-  }
-}
-
 /* Flexbox Utility classes - Utilize where necessary */
 .flex {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-@media (min-width: 768px) {
-  .flex {
-      flex-direction: row;
-  }
 }
