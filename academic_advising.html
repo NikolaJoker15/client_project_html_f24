@@ -37,7 +37,19 @@
         </section>
     </main>
     <footer>
-        <p>MSI Academic Advising &copy; 2024| <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising</a></p>
+        <p>MSI Academic Advising &copy; <span id="year"></span>| <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising</a></p>
+        <button id="colorChangeButton">Change Background Color</button>
     </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+    <script>
+        // Event listener for changing background color
+        document.getElementById('colorChangeButton').addEventListener('click', function() {
+            const colors = ['#e0f7fa', '#ffeb3b', '#ffc107', '#ff7043', '#8bc34a', '#607d8b']; // Example color palette
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.body.style.backgroundColor = randomColor;
+        });
+    </script>
 </body>
 </html>
